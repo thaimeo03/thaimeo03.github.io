@@ -1,5 +1,5 @@
 * {margin: 0; padding: 0;font-family: "Inter", sans-serif;}
-a {text-decoration: none;}
+a {text-decoration: none; color: black;}
 
 body {
 	background-color: #F9F5F5;
@@ -202,7 +202,7 @@ nav .info .info_detail .language {
 }
 
 .banner_detail .text2{
-	font-family: seui light;
+	font-family: segoeui light;
 	font-size: 35px;
 	letter-spacing: 20px;
 }
@@ -262,7 +262,156 @@ nav .info .info_detail .language {
 	color: skyblue;
 }
 
+
+/*product*/
+
 .product {
-	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	width: 95%;
 	height: 1000px;
+	margin-left: auto;
+	margin-right: auto;
 }
+
+.product .product_item {
+	width: 265px;
+	height: 500px;
+	margin: 1%;
+}
+
+.product_item .product_image {
+	width: 260px;
+	height: 47%;
+	position: relative;
+	
+}
+
+
+.product_item .product_image .icon {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	visibility: hidden;
+}
+
+.product_item .product_image .sale_off {
+	position: absolute;
+	background-color: black;
+}
+
+.product_item .product_image .sale_off p {
+	padding: 5px;
+	color: white;
+	font-size: 12px;
+}
+
+.product_image .icon .button {
+	display: flex;
+  	width: 40%;
+  	height: 20%;
+  	margin-left: auto;
+  	margin-right: auto;
+  	margin-top: 40%;
+}
+
+.product_image .icon .button .button1{
+	background-color: white;
+	width: 50%;
+	border: 1px solid black;
+}
+
+.product_image .icon .button .button1 i{
+	font-size: 23px;
+}
+
+.product_image .icon .button .button1:hover i {
+	color: skyblue;
+}
+
+
+.product_image .icon .button .button2{
+	width: 50%;
+	border: 1px solid black;
+	background-color: white;
+	border-left-color: white;
+}
+
+.product_image .icon .button .button2 i{
+	font-size: 20px;
+}
+
+.product_image .icon .button .button2:hover i {
+	color: skyblue;
+}
+
+.product_image .icon .add_product {
+	width: 100%;
+	height: 25%;
+	margin-top: 10%;
+	border: 1px solid black;
+	background-color: white;
+	letter-spacing: 3px;
+}
+
+.product_image .icon .add_product a {
+	padding: 8% 22%;
+}
+
+.product_image .icon .add_product:hover {
+	background-color: black;
+}
+
+.product_image .icon .add_product:hover a {
+	color: white;
+}
+
+.product_item .product_image:hover .icon {
+	visibility: visible;
+	transition: 0.7s;
+}
+
+.product_item .product_image img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+
+.product .product_detail {
+	margin-top: 2px;
+	background-color: white;
+	width: 260px;
+	height: 53%;
+	text-align: center;
+}
+
+.product_detail .product_name {
+	padding-top: 10%;
+	width: 70%;
+	height: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.product_detail .product_name a {
+	font-family: segoeui light;
+	font-size: 23px;
+	letter-spacing: 3px;
+	color: black;
+}
+
+.product_detail .product_intro {
+	padding-top: 10%;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	color: grey;
+}
+
+.product_detail .product_price {
+	padding-top: 28%;
+	font-weight: bold;
+}
+
