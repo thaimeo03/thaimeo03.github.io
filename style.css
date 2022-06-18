@@ -262,16 +262,24 @@ nav .info .info_detail .language {
 	color: skyblue;
 }
 
+.title_product {
+	font-size: 35px;
+	font-family: segui light;
+	letter-spacing: 4px;
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 3%;
+}
 
 /*product*/
 
 .product {
 	display: flex;
 	flex-wrap: wrap;
-	width: 95%;
-	height: 1000px;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+	justify-content: center;
 }
 
 .product .product_item {
@@ -400,6 +408,11 @@ nav .info .info_detail .language {
 	font-size: 23px;
 	letter-spacing: 3px;
 	color: black;
+	transition: 0.3s;
+}
+
+.product_detail .product_name a:hover {
+	color: skyblue;
 }
 
 .product_detail .product_intro {
@@ -415,3 +428,59 @@ nav .info .info_detail .language {
 	font-weight: bold;
 }
 
+/*footer */
+
+footer {
+	margin-top: 100px;
+	width: 100%;
+	height: 300px;
+	background-color: #CCFFFF;
+}
+
+.container_repeat {
+	width: 60%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container_repeat .us {
+	display: flex;
+	justify-content: center;
+}
+
+.container_repeat .us a {
+	padding: 4% 2%;
+	font-size: 15px;
+	font-family: segoe ui;
+}
+
+.trademark_repeat {
+	width: 25%;
+	height: 20%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.trademark_repeat a {
+	text-align: center;
+	display: block;
+	padding-top: 10%;
+	font-size: 24px;
+	letter-spacing: 8px;
+	font-family: segoe ui light;
+}
+
+footer .logo {
+	margin-top: 20px;
+	text-align: center;
+}
+
+footer .logo .logo_detail {
+	padding: 10px;
+	color: pink;
+}
+
+footer .logo .logo_detail:hover {
+	color: black;
+}
